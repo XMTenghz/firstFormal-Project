@@ -255,8 +255,8 @@ Angular 框架功能的四大基本概念：组件、模板、指令及依赖注
 
 # Angular 视图封装
         在 Angular 中，组件的样式可以封装在组件的宿主元素中，这样它们就不会影响应用程序的其余部。
-        Component 的装饰器提供了 encapsulation 选项，可用来控制如何基于每个组件应用视图封装。
-        
+        Component 的装饰器提供了 encapsulation 选项，可用来控制如何基于每个组件应用视图封装,即：
+        encapsulation: ViewEncapsulation.None,
         ViewEncapsulation.ShadowDom	：Angular 使用浏览器内置的 Shadow DOM API 将组件的视图包含在ShadowRoot（用作组件的宿主元素）中，并以隔离的方式应用所提供的样式。
         
         ViewEncapsulation.Emulated：Angular 会修改组件的 CSS 选择器，使它们只应用于组件的视图，不影响应用程序中的其他元素（模拟 Shadow DOM 行为）。
