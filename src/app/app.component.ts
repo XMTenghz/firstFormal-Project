@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {//顶层组件
   // 这里 title 的值来自组件类：
   title = 'first-project';
-  fontColor = 'red';//属性绑定
+  fontColor = 'red';//属性绑定 
 }
